@@ -4,7 +4,9 @@
         text-align: center;
         padding: {{ section.settings.acb_padding }}px 0;
         font-size: {{section.settings.font_size}}px;
-        text-align: {{ section.settings.acb_alignment }}
+        text-align: {{ section.settings.acb_alignment }};
+        color: {{ section.settings.acb_color }};
+        background: {{ section.settings.acb_background }};
     }
 </style>
 
@@ -82,7 +84,21 @@ Dynamic Announcement Bar
                     }
                 ],
                 "default": "center"
+            },
+            {
+            "type": "color",
+            "id": "acb_color",
+            "label": "Font Color",
+            "default": "#000000"
+            },
+            {
+            "type": "color_background",
+            "id": "acb_background",
+            "label": "Background",
+            "default": "linear-gradient(#ffffff, #000000)"
             }
+
+
 
 
 
