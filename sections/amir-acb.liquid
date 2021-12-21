@@ -3,6 +3,7 @@
         text-align: center;
         padding: {{ section.settings.acb_padding }}px 0;
         font-size: {{section.settings.font_size}}px;
+        text-align: {{ section.settings.acb_alignment }}
     }
 </style>
 
@@ -23,36 +24,56 @@
         "settings" : [
 
             {
-            "type": "checkbox",
-            "id": "show_announcement",
-            "label": "Show announcement",
-            "default": true
+                "type": "checkbox",
+                "id": "show_announcement",
+                "label": "Show announcement",
+                "default": true
             },
             {
-            "type": "text",
-            "id": "acb_text",
-            "label": "Heading",
-            "default": "Enter a Heading"
+                "type": "text",
+                "id": "acb_text",
+                "label": "Heading",
+                "default": "Enter a Heading"
             },
             {
-            "type": "range",
-            "id": "acb_padding",
-            "min": 6,
-            "max": 24,
-            "step": 1,
-            "unit": "px",
-            "label": "Padding",
-            "default": 10
+                "type": "range",
+                "id": "acb_padding",
+                "min": 6,
+                "max": 24,
+                "step": 1,
+                "unit": "px",
+                "label": "Padding",
+                "default": 10
             },
             {
-            "type": "range",
-            "id": "font_size",
-            "min": 6,
-            "max": 24,
-            "step": 1,
-            "unit": "px",
-            "label": "Font Size",
-            "default": 10
+                "type": "range",
+                "id": "font_size",
+                "min": 6,
+                "max": 24,
+                "step": 1,
+                "unit": "px",
+                "label": "Font Size",
+                "default": 10
+            },
+            {
+                "type": "radio",
+                "id": "acb_alignment",
+                "label": "Text Alignment",
+                "options": [
+                    {
+                        "value": "left",
+                        "label": "Left"
+                    },
+                    {
+                        "value": "center",
+                        "label": "Center"
+                    },
+                    {
+                        "value": "right",
+                        "label": "Right"
+                    }
+                ],
+                "default": "center"
             }
 
 
