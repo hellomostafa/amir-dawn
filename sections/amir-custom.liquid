@@ -1,13 +1,56 @@
 
-<style></style>
+<style>
+    .myLiquid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background: black;
+        color: white
+    }
+</style>
 
-<div class="myLiquid">
-    Hello Amir!!
-</div>
+{% for block in section.blocks %} 
+
+    {% if block.settings.amir_text %}
+
+        <div class="myLiquid">
+            <div class="myCode">
+                {{ block.settings.amir_text }}
+            </div>
+        </div>
+
+    {% endif %}
+
+{% endfor %}
+
 
 {% schema %}
 {
-    "name": "Amir Custom",
-    "settings": []
+    "name": "Amir Custom Bar",
+    "settings": [],
+    "max_blocks": 5,
+    "blocks" : [
+        {
+            "type": "announcement",
+            "name": "announcement",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "amir_text",
+                    "label": "Amir Announcement",
+                   "default": "Free Shipping Over $50"
+                }
+            ]
+        }
+    ],
+
+    "default": {
+        "blocks": [
+            {
+                "type": "announcement"
+            }
+        ]
+    }
 }
 {% endschema %}
