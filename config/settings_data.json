@@ -53,7 +53,7 @@
           "font_size": 17,
           "acb_alignment": "center",
           "acb_color": "#ffffff",
-          "acb_background": "linear-gradient(155deg, rgba(73, 114, 199, 1), rgba(0, 0, 0, 1) 100%)",
+          "acb_background": "linear-gradient(155deg, rgba(73, 114, 199, 1), rgba(116, 34, 34, 1) 100%)",
           "show_html": ""
         }
       },
