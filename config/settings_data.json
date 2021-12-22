@@ -48,11 +48,11 @@
         "type": "amir-acb",
         "settings": {
           "show_announcement": true,
-          "acb_text": "Enter a Heading",
+          "acb_text": "Welcome to our Shop.",
           "acb_padding": 10,
-          "font_size": 15,
+          "font_size": 17,
           "acb_alignment": "center",
-          "acb_color": "#000000",
+          "acb_color": "#ffffff",
           "acb_background": "linear-gradient(155deg, rgba(73, 114, 199, 1), rgba(0, 0, 0, 1) 100%)",
           "show_html": ""
         }
