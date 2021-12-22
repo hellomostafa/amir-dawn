@@ -22,6 +22,15 @@ Dynamic Announcement Bar
 
 {% endif %}
 
+<div>
+    {{ section.settings.show_html}}
+    
+</div>
+{%- comment -%}
+<div>
+    <img src="{{ section.settings.logo_image | img_url: '100*200' }}" alt=""/>
+</div>
+{%- endcomment -%}
 
 {%- comment -%}
  Shopify Schema
@@ -96,6 +105,18 @@ Dynamic Announcement Bar
             "id": "acb_background",
             "label": "Background",
             "default": "linear-gradient(#ffffff, #000000)"
+            },
+            {
+                "type":"html",
+                "id": "show_html",
+                "label": "Write Custom HTML Code"
+                
+            },
+            {
+                "type": "image_picker",
+                "id": "logo_image",
+                "label": "Add Image",
+                "info": "Image will be 100*200"
             }
 
 
