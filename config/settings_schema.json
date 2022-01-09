@@ -12,7 +12,7 @@
     "settings": [
       {
         "type": "header",
-        "content": "This is announcement bar"
+        "content": "This is announcement bar by Amir"
       },
       {
         "type": "richtext",
