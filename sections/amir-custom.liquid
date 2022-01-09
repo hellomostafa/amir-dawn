@@ -45,10 +45,25 @@
         }
     ],
 
+    
+
     "presets": [
         {
-            "name": "announcement"
+            "name": "Announcement"
         }
-    ]
+    ],
+    "templates": ["index", "page"]
 }
 {% endschema %}
+
+{%- comment -%}
+
+"default": {
+"blocks": [
+{
+"type": "announcement"
+}
+]
+}
+
+{%- endcomment -%}

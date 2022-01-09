@@ -147,6 +147,12 @@
 
   <!-- {% section 'announcement-bar' %} -->
 
+  {% if settings.my_text != blank %}
+    <div class="my-div">
+      {{ settings.my_text | downcase }}
+    </div>
+  {% endif %}
+
 
   {% section 'amir-custom' %}
 

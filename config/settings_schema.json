@@ -8,6 +8,20 @@
     "theme_support_url": "https://support.shopify.com/"
   },
   {
+    "name": "Announcement Bar",
+    "settings": [
+      {
+        "type": "header",
+        "content": "This is announcement bar by Amir Mostafa"
+      },
+      {
+        "type": "richtext",
+        "id": "my_text",
+        "label": "Announcement Text"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
